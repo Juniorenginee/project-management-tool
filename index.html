@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Project Management System</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Tasks Section -->
+            <div class="section">
+                <h2>Create a Task</h2>
+                <form id="taskForm">
+                    <label for="assigner">Assigner:</label>
+                    <input type="text" id="assigner" required>
+
+                    <label for="task">Task:</label>
+                    <input type="text" id="task" required>
+
+                    <label for="assignee">Assignee:</label>
+                    <input type="text" id="assignee" required>
+
+                    <button type="submit">Create Task</button>
+                </form>
+
+                <h2>Task List</h2>
+                <div id="taskList"></div>
+            </div>
+
+            <!-- Chats Section -->
+            <div class="section">
+                <h2>Chat</h2>
+                <div id="chatMessages"></div>
+                <form id="chatForm">
+                    <label for="chatName">Your Name:</label>
+                    <input type="text" id="chatName" required>
+
+                    <label for="chatMessage">Message:</label>
+                    <input type="text" id="chatMessage" required>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
